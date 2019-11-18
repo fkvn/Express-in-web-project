@@ -2,7 +2,7 @@
  
  Expressjs: An example of web application by using Express js
  
- This example is from LinkedIn courses. 
+ This example is from LinkedIn courses with detail comments to understand the codes.
  
   * Download/clone the project.
   * Run **npm i** to install all dependencies.
