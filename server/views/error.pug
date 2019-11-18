@@ -1,0 +1,18 @@
+doctype html
+
+html
+    head
+        link(rel="stylesheet" href="/css/error.css")
+        link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
+        script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    body    
+        .page-wrap.d-flex.flex-row.align-items-center
+            .container
+                .row.justify-content-center
+                    .col-md-12.text-center
+                        //-  '=status' = value we sent to res.locals.status
+                        span.display-1.d-block=status 
+                        //-  '=message' = value we sent to res.locals.message
+                        .mb-4.lead=message
+                        a.btn.btn-link(href='/') Back to Home
